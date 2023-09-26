@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Nahas And Partners </title>
+  <title> ترافع </title>
   <!-- icon -->
   <link rel="icon" type="image/x-icon" href="img/fav.svg">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <!-- swiper -->
@@ -24,7 +24,7 @@
   <!-- odometer -->
   <link rel="stylesheet" href="css/odometer.min.css">
   <!-- Custom style  -->
-  <link rel="stylesheet" href="css/styleEN.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -53,18 +53,17 @@
         <div class="row">
           <div class="col-md-3 p-1">
             <div class="profileNavCol">
-              <a href="profile.html"> <i class="fas fa-books me-2"></i> My lawsuits </a>
-              <a href="profile-notifications.html"> <i class="fas fa-bell me-2"></i> Notifications </a>
-              <a class="active" href="profile-edit.html"><i class="fas fa-cog me-2"></i> Edit Profile </a>
-              <a href="index.html"><i class="fas fa-power-off me-2"></i> Logout </a>
+              <a href="profile.html"> <i class="fas fa-books me-2"></i> الدعاوى القضائية الخاصة بي </a>
+              <a href="profile-notifications.html"> <i class="fas fa-bell me-2"></i> الإشعارات </a>
+              <a class="active" href="profile-edit.html"><i class="fas fa-cog me-2"></i> تعديل الملف الشخصي </a>
+              <a href="index.html"><i class="fas fa-power-off me-2"></i> تسجيل الخروج </a>
             </div>
           </div>
           <div class=" col-md-9 p-2 profileContent">
             <!-- content -->
-
             <div class="editProfile">
               <div class="head">
-                <h5> <i class="fas fa-user me-2"></i> Personal Info </h5>
+                <h5> <i class="fas fa-user me-2"></i> معلومات شخصية </h5>
               </div>
               <form action="#!" class="row">
                 <div class="col-12 p-2">
@@ -73,57 +72,65 @@
                   </div>
                 </div>
                 <div class="col-12 p-2">
-                  <label class="form-label"> <i class="fas fa-user me-2"></i> User Name</label>
+                  <label class="form-label"> <i class="fas fa-user me-2"></i> اسم المستخدم </label>
                   <div class="row">
                     <div class="col-md-6 p-1">
-                      <input type="text" class="form-control" placeholder="First Name">
+                      <input type="text" id="firsr-name" name="name" class="form-control" placeholder="الإسم الأول">
                     </div>
                     <div class="col-md-6 p-1">
-                      <input type="text" class="form-control" placeholder="Last Name">
+                      <input type="text" id="second-name" class="form-control" placeholder="الإسم الثانى">
                     </div>
                   </div>
                 </div>
                 <div class="col-12 p-2">
-                  <label for="email" class="form-label"> <i class="fas fa-envelope me-2"></i> Email</label>
+                  <label for="email" class="form-label"> <i class="fas fa-envelope me-2"></i> البريد الإلكترونى</label>
                   <input type="email" class="form-control" id="email" placeholder="mail@mail.com">
                 </div>
                 <div class="col-12 p-2">
-                  <label for="Phone" class="form-label"> <i class="fas fa-phone-alt me-2"></i> Phone</label>
+                  <label for="Phone" class="form-label"> <i class="fas fa-phone-alt me-2"></i> الهاتف </label>
                   <div class="row">
                     <div class="col-4 p-1">
                       <select class="select2">
-                        <option value=""> Egypt +20 </option>
-                        <option value=""> KSA +996 </option>
+                        <option value=""> مصر +20 </option>
+                        <option value=""> السعودية +996 </option>
                       </select>
                     </div>
                     <div class="col-8 p-1">
-                      <input type="number" class="form-control" id="Phone" placeholder="00000000">
+                      <input type="tel" class="form-control" id="Phone" placeholder="00000000">
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 p-2">
-                  <label class="form-label"> <i class="fas fa-flag me-2"></i> Country </label>
+                  <label class="form-label"> <i class="fas fa-flag me-2"></i> الدولة </label>
                   <select class="select2">
-                    <option value=""> Egypt </option>
-                    <option value=""> KSA </option>
+                    <option value=""> مصر </option>
+                    <option value=""> السعودية </option>
                   </select>
                 </div>
                 <div class="col-md-6 p-2">
-                  <label class="form-label"> <i class="fas fa-city me-2"></i> City </label>
+                  <label class="form-label"> <i class="fas fa-city me-2"></i> المدينة </label>
                   <select class="select2">
-                    <option value=""> Alexandria </option>
-                    <option value=""> Cairo </option>
-                    <option value=""> Giza </option>
+                    <option value=""> الإسكندرية </option>
+                    <option value=""> القاهرة </option>
+                    <option value=""> الجيزة </option>
                   </select>
                 </div>
                 <div class="col-md-12 p-2">
-                  <label for="date" class="form-label"> <i class="fas fa-calendar-alt me-2"></i> Date of birth </label>
+                  <label for="date" class="form-label"> <i class="fas fa-calendar-alt me-2"></i> تاريخ الميلاد </label>
                   <input type="date" class="form-control" id="date">
                 </div>
-
+                <div class="col-md-6 p-2">
+                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> كلمة المرور</label>
+                  <input type="password" class="form-control" id="password" placeholder="*****">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> تأكيد
+                    كلمةالمرور</label>
+                  <input type="password" class="form-control" id="repetPassword" placeholder="*****">
+                </div>
                 <div class="col-12 py-4 p-2 text-center">
                   <button class="default-btn " type="submit">
-                    <p class="px-5"> Confirm </p>
+                    <p class="px-5"> تأكيد </p>
                     <span></span>
                   </button>
                 </div>
@@ -132,27 +139,26 @@
             <!--  -->
             <div class="editProfile">
               <div class="head">
-                <h5> <i class="fas fa-key me-2"></i> Password </h5>
+                <h5> <i class="fas fa-key me-2"></i> كلمةالمرور </h5>
               </div>
               <form action="#!" class="row">
-             
                 <div class="col-md-12 p-2">
-                  <label for="currentPassword" class="form-label"> <i class="fas fa-key me-2"></i> current password</label>
+                  <label for="currentPassword" class="form-label"> <i class="fas fa-key me-2"></i> كلمةالمرور الحالية
+                  </label>
                   <input type="password" class="form-control" id="currentPassword" placeholder="*****">
                 </div>
                 <div class="col-md-6 p-2">
-                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> new password</label>
+                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> كلمةالمرور الجديدة </label>
                   <input type="password" class="form-control" id="password" placeholder="*****">
                 </div>
                 <div class="col-md-6 p-2">
-                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> Confirm password</label>
+                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> تأكيد كلمةالمرور
+                  </label>
                   <input type="password" class="form-control" id="repetPassword" placeholder="*****">
                 </div>
-
-
                 <div class="col-12 py-4 p-2 text-center">
                   <button class="default-btn " type="submit">
-                    <p class="px-5"> Confirm </p>
+                    <p class="px-5"> تأكيد </p>
                     <span></span>
                   </button>
                 </div>

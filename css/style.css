@@ -1604,7 +1604,8 @@ content {
 .profile .userHeader .userInfo .control {
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .profile .userHeader .userInfo .control i {
   font-size: 28px;

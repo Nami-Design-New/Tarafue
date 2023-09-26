@@ -1624,7 +1624,8 @@ content {
       .control {
         position: absolute;
         left: 20px;
-        top: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         i {
           font-size: 28px;
           color: rgb(255, 0, 0);
@@ -3021,4 +3022,3 @@ content {
     padding: 0 12px;
   }
 }
-
