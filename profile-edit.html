@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Nahas And Partners </title>
+  <!-- icon -->
+  <link rel="icon" type="image/x-icon" href="img/fav.svg">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.min.css">
+  <!-- dropify -->
+  <link rel="stylesheet" href="css/dropify.min.css">
+  <!-- odometer -->
+  <link rel="stylesheet" href="css/odometer.min.css">
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/styleEN.css">
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <div id="Header" class="fixed-top"></div>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- profile -->
+    <section class="profile">
+      <div class="NavBack"></div>
+      <div class="container ">
+        <!-- user Header  -->
+        <div class=" userHeader">
+          <div class="userInfo">
+            <img src="img/user.jpg" alt="">
+            <span> Mahmoud Elkomy </span>
+            <div class="control">
+              <a href="index.html" data-bs-toggle="tooltip" title="Logout"><i class="fas fa-power-off"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- /user Header  -->
+        <div class="row">
+          <div class="col-md-3 p-1">
+            <div class="profileNavCol">
+              <a href="profile.html"> <i class="fas fa-books me-2"></i> My lawsuits </a>
+              <a href="profile-notifications.html"> <i class="fas fa-bell me-2"></i> Notifications </a>
+              <a class="active" href="profile-edit.html"><i class="fas fa-cog me-2"></i> Edit Profile </a>
+              <a href="index.html"><i class="fas fa-power-off me-2"></i> Logout </a>
+            </div>
+          </div>
+          <div class=" col-md-9 p-2 profileContent">
+            <!-- content -->
+
+            <div class="editProfile">
+              <div class="head">
+                <h5> <i class="fas fa-user me-2"></i> Personal Info </h5>
+              </div>
+              <form action="#!" class="row">
+                <div class="col-12 p-2">
+                  <div class="profilePic">
+                    <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="img/user.png" />
+                  </div>
+                </div>
+                <div class="col-12 p-2">
+                  <label class="form-label"> <i class="fas fa-user me-2"></i> User Name</label>
+                  <div class="row">
+                    <div class="col-md-6 p-1">
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col-md-6 p-1">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 p-2">
+                  <label for="email" class="form-label"> <i class="fas fa-envelope me-2"></i> Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="mail@mail.com">
+                </div>
+                <div class="col-12 p-2">
+                  <label for="Phone" class="form-label"> <i class="fas fa-phone-alt me-2"></i> Phone</label>
+                  <div class="row">
+                    <div class="col-4 p-1">
+                      <select class="select2">
+                        <option value=""> Egypt +20 </option>
+                        <option value=""> KSA +996 </option>
+                      </select>
+                    </div>
+                    <div class="col-8 p-1">
+                      <input type="number" class="form-control" id="Phone" placeholder="00000000">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 p-2">
+                  <label class="form-label"> <i class="fas fa-flag me-2"></i> Country </label>
+                  <select class="select2">
+                    <option value=""> Egypt </option>
+                    <option value=""> KSA </option>
+                  </select>
+                </div>
+                <div class="col-md-6 p-2">
+                  <label class="form-label"> <i class="fas fa-city me-2"></i> City </label>
+                  <select class="select2">
+                    <option value=""> Alexandria </option>
+                    <option value=""> Cairo </option>
+                    <option value=""> Giza </option>
+                  </select>
+                </div>
+                <div class="col-md-12 p-2">
+                  <label for="date" class="form-label"> <i class="fas fa-calendar-alt me-2"></i> Date of birth </label>
+                  <input type="date" class="form-control" id="date">
+                </div>
+
+                <div class="col-12 py-4 p-2 text-center">
+                  <button class="default-btn " type="submit">
+                    <p class="px-5"> Confirm </p>
+                    <span></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--  -->
+            <div class="editProfile">
+              <div class="head">
+                <h5> <i class="fas fa-key me-2"></i> Password </h5>
+              </div>
+              <form action="#!" class="row">
+             
+                <div class="col-md-12 p-2">
+                  <label for="currentPassword" class="form-label"> <i class="fas fa-key me-2"></i> current password</label>
+                  <input type="password" class="form-control" id="currentPassword" placeholder="*****">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> new password</label>
+                  <input type="password" class="form-control" id="password" placeholder="*****">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> Confirm password</label>
+                  <input type="password" class="form-control" id="repetPassword" placeholder="*****">
+                </div>
+
+
+                <div class="col-12 py-4 p-2 text-center">
+                  <button class="default-btn " type="submit">
+                    <p class="px-5"> Confirm </p>
+                    <span></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <div id="Footer"></div>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/odometer.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/dropify.min.js"></script>
+  <script src="js/Custom.js"></script>
+  <script>
+    $('#Header').load("Header.html");
+    $('#Footer').load("Footer.html");
+    // goBack
+    function goBack() {
+      window.history.back();
+    };
+  </script>
+</body>
+
+</html>
