@@ -409,7 +409,7 @@ content {
   }
 }
 .MainSlider .MainSlider-container .swiper-slide .info h1 {
-  font-size: 50px;
+  font-size: 46px;
   overflow: hidden;
   color: #e5ac70;
   font-weight: bolder;
@@ -420,6 +420,11 @@ content {
 @media (max-width: 768px) {
   .MainSlider .MainSlider-container .swiper-slide .info h1 {
     font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .MainSlider .MainSlider-container .swiper-slide .info h1 {
+    line-height: 48px;
   }
 }
 .MainSlider .MainSlider-container .swiper-slide .info a {

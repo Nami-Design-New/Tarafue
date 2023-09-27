@@ -449,7 +449,7 @@ content {
           }
         }
         h1 {
-          font-size: 50px;
+          font-size: 46px;
           overflow: hidden;
           color: $secondColor;
           font-weight: bolder;
@@ -458,6 +458,9 @@ content {
           line-height: 90px;
           @media (max-width: 768px) {
             font-size: 40px;
+          }
+          @media (max-width: 768px) {
+            line-height: 48px;
           }
         }
         a {
