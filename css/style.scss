@@ -3,7 +3,7 @@ $secondColor: #e5ac70;
 $gold: #ffd700;
 $white-color: #ffffff;
 $black-color: #292929;
-$transition: all .3s ease-in-out;
+$transition: all 0.3s ease-in-out;
 $shadow: 0px 3px 6px #00000030;
 $BigShadow: 0px 10px 30px #00000030;
 @font-face {
@@ -16,7 +16,7 @@ $BigShadow: 0px 10px 30px #00000030;
 }
 * {
   // font-family: 'Poppins', sans-serif;
-  font-family: 'Almarai';
+  font-family: "Almarai";
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -24,13 +24,12 @@ $BigShadow: 0px 10px 30px #00000030;
   direction: rtl;
 }
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  background-color: $mainColor;
+  width: 8px;
+  height: 8px;
+  background-color: #dadada;
   border-radius: 0px !important;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 0px !important;
 }
 ::-webkit-scrollbar-thumb {
@@ -247,7 +246,7 @@ content {
     //     }
     // }
     .dropdown-menu {
-      animation-duration: .5s;
+      animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-name: fadeInUp !important;
       animation-delay: 0s;
@@ -354,7 +353,7 @@ content {
   }
   &::after {
     font-size: 26px;
-    font-family: 'Font Awesome 6 pro';
+    font-family: "Font Awesome 6 pro";
     // font-weight: 900;
     transition: $transition;
   }
@@ -382,7 +381,7 @@ content {
     transition: $transition;
     width: 20px;
     border-radius: 4px;
-    opacity: .5;
+    opacity: 0.5;
     background-color: $secondColor;
     margin: 2px !important;
   }
@@ -433,7 +432,7 @@ content {
   justify-content: space-between;
   align-items: center;
   &::after {
-    content: '';
+    content: "";
     width: 95%;
     height: 2px;
     background-color: $secondColor;
@@ -443,7 +442,7 @@ content {
     transform: translateY(50%);
   }
   &::before {
-    content: '';
+    content: "";
     width: 16px;
     height: 16px;
     border-radius: 100px;
@@ -494,7 +493,7 @@ content {
     z-index: 2;
   }
   &::before {
-    content: '';
+    content: "";
     width: 95%;
     height: 2px;
     background-color: $secondColor;
@@ -532,7 +531,7 @@ content {
     margin: 30px 0;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       width: 50%;
       height: 2px;
       border-radius: 100px;
@@ -542,7 +541,7 @@ content {
       bottom: 0;
     }
     &::after {
-      content: '';
+      content: "";
       height: 50%;
       width: 2px;
       border-radius: 100px;
@@ -747,7 +746,7 @@ content {
         position: relative;
         &::after {
           position: absolute;
-          content: '';
+          content: "";
           width: 130%;
           height: 1px;
           background: #ffffff;
@@ -798,9 +797,12 @@ content {
   }
   .features-head {
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
+    flex: 1;
+    justify-content: center;
+    background-color: #193b3310;
+    color: $mainColor;
   }
   .package-type {
     width: 100%;
@@ -815,6 +817,7 @@ content {
       font-size: 22px !important;
       font-weight: 600;
       color: $mainColor;
+      white-space: nowrap;
     }
     h3 {
       font-size: 16px;
@@ -833,6 +836,12 @@ content {
     border-left: 1px solid #eeeeee;
   }
   .table {
+    display: flex;
+    overflow-x: scroll;
+    .pack {
+      flex: 1;
+      min-width: 200px;
+    }
     .features {
       border: 1px solid #eeeeee;
       list-style: none;
@@ -867,10 +876,10 @@ content {
     }
   }
 }
-.system-view{
+.system-view {
   width: 100%;
   padding: 60px 0;
-  background-image: url('../img/rounded-layer.png');
+  background-image: url("../img/rounded-layer.png");
   background-size: cover;
   background-position: bottom;
   display: flex;
@@ -878,16 +887,16 @@ content {
   justify-content: center;
   flex-direction: column;
   gap: 48px;
-  h4{
+  h4 {
     color: $mainColor;
     font-size: 20px;
-    width: min(100% - 24px , 600px);
+    width: min(100% - 24px, 600px);
     text-align: center;
     line-height: 1.45;
     font-weight: 600;
   }
-  img{
-    width: min(100% - 32px , 600px);
+  img {
+    width: min(100% - 32px, 600px);
     border-radius: 24px;
   }
 }
@@ -921,14 +930,14 @@ content {
     align-items: center;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       top: 50%;
       width: 100%;
       height: 4px;
       background-color: $secondColor;
-      transition: .6s ease-in-out all;
+      transition: 0.6s ease-in-out all;
       border-radius: 4px;
       z-index: -1;
     }
@@ -974,7 +983,7 @@ content {
         padding-left: 25px;
       }
       &::before {
-        content: '';
+        content: "";
         width: 65px;
         height: 100%;
         position: absolute;
@@ -1117,7 +1126,7 @@ content {
       margin: -40%;
       background: #fff url(../img/map.png) 0 50% repeat-x;
       background-size: auto 90%;
-      box-shadow: rgba(0, 0, 0, .05) 0 1em 2em;
+      box-shadow: rgba(0, 0, 0, 0.05) 0 1em 2em;
       border-radius: 100%;
       overflow: hidden;
       animation: map linear 90s infinite;
@@ -1136,7 +1145,7 @@ content {
     }
     #orbic_path {
       fill: none;
-      stroke: rgba(0, 0, 0, .1);
+      stroke: rgba(0, 0, 0, 0.1);
       stroke-linecap: round;
       stroke-width: 4px;
       stroke-dasharray: 1 9;
@@ -1146,7 +1155,7 @@ content {
     }
     #orbic_dots use {
       fill: #fff;
-      stroke: rgba(30, 144, 255, .25);
+      stroke: rgba(30, 144, 255, 0.25);
       stroke-width: 4;
       -webkit-animation: dots ease 1s infinite alternate;
       -moz-animation: dots ease 1s infinite alternate;
@@ -1157,34 +1166,34 @@ content {
     }
     #orbic_dot2 {
       transform: translate(5%, 62.8%);
-      animation-delay: .2s !important;
+      animation-delay: 0.2s !important;
     }
     #orbic_dot3 {
       transform: translate(97%, 41%);
-      animation-delay: .3s !important;
+      animation-delay: 0.3s !important;
     }
     #orbic_dot4 {
       transform: translate(50%, 70.2%);
-      animation-delay: .5s !important;
+      animation-delay: 0.5s !important;
     }
     #orbic_dot5 {
       transform: translate(31.5%, 51.5%);
-      animation-delay: .7s !important;
+      animation-delay: 0.7s !important;
     }
     #orbic_user1 {
-      transform: translate(1%, 40%) scale(.666667);
+      transform: translate(1%, 40%) scale(0.666667);
     }
     #orbic_user2 {
-      transform: translate(18%, 64%) scale(.666667);
+      transform: translate(18%, 64%) scale(0.666667);
     }
     #orbic_user3 {
-      transform: translate(39.5%, 31%) scale(.666667);
+      transform: translate(39.5%, 31%) scale(0.666667);
     }
     #orbic_user4 {
-      transform: translate(69%, 22%) scale(.666667);
+      transform: translate(69%, 22%) scale(0.666667);
     }
     #orbic_user5 {
-      transform: translate(75%, 53%) scale(.666667);
+      transform: translate(75%, 53%) scale(0.666667);
     }
     @-webkit-keyframes map {
       100% {
@@ -1279,7 +1288,7 @@ content {
           align-items: center;
           border: 1px solid $mainColor;
           border-radius: 50%;
-          transition: .3s ease-in-out;
+          transition: 0.3s ease-in-out;
           color: $mainColor;
         }
         &:hover {
@@ -1314,7 +1323,7 @@ content {
         align-items: center;
         border: 1px solid $mainColor;
         border-radius: 50%;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
         color: $mainColor;
       }
       &:hover {
@@ -1375,7 +1384,7 @@ content {
   padding: 170px 30px 120px;
   transition: $transition;
   margin-bottom: 20px;
-  background-image: linear-gradient(45deg, #13223590, #ECCFA890),
+  background-image: linear-gradient(45deg, #13223590, #eccfa890),
     url(../img/sky.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -1552,7 +1561,7 @@ content {
         padding: 0px 20px;
       }
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         top: 50%;
@@ -1608,7 +1617,8 @@ content {
 .select2-results__option--selectable {
   transition: $transition;
 }
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: $mainColor;
   color: $secondColor;
 }
@@ -1627,7 +1637,7 @@ content {
 // profile
 .profile {
   .NavBack {
-    background-image: linear-gradient(45deg, #13223590, #ECCFA890),
+    background-image: linear-gradient(45deg, #13223590, #eccfa890),
       url(../img/sky.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -1687,7 +1697,7 @@ content {
             left: 0;
             bottom: 0;
             background-color: #ccc;
-            transition: .4s;
+            transition: 0.4s;
             border-radius: 34px;
             margin: 0px !important;
             &:before {
@@ -1698,7 +1708,7 @@ content {
               right: 4px;
               bottom: 4px;
               background-color: white;
-              transition: .4s;
+              transition: 0.4s;
               border-radius: 50%;
             }
           }
@@ -2346,7 +2356,7 @@ content {
   padding-right: 20px;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     width: 2px;
     height: calc(100% - 50px);
     border-radius: 10px;
@@ -2367,7 +2377,7 @@ content {
       margin-bottom: 0;
     }
     &::before {
-      content: '';
+      content: "";
       width: 22px;
       height: 20px;
       border-radius: 2px;
@@ -2377,7 +2387,7 @@ content {
       top: 20px;
     }
     &::after {
-      content: '';
+      content: "";
       width: 0;
       height: 0;
       border-top: 10px solid transparent;
@@ -2486,7 +2496,7 @@ content {
     padding-bottom: 30px;
     position: relative;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       bottom: 0;
@@ -2496,7 +2506,7 @@ content {
       border-radius: 100px;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       bottom: -4px;
@@ -2633,7 +2643,7 @@ content {
   height: 100%;
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     top: 0;
@@ -2882,7 +2892,7 @@ content {
           border: none;
           outline: none;
           background: none;
-          transition: all .3s ease-in-out;
+          transition: all 0.3s ease-in-out;
         }
         .likes button.active {
           color: red;
@@ -3005,9 +3015,9 @@ content {
           button {
             text-align: right;
             color: $mainColor;
-            padding: .25rem 0;
+            padding: 0.25rem 0;
             display: flex;
-            gap: .5rem;
+            gap: 0.5rem;
             span {
               width: 0;
               overflow: hidden;
@@ -3015,7 +3025,7 @@ content {
               display: flex;
               align-items: center;
               justify-content: center;
-              transition: all .3s ease-in-out;
+              transition: all 0.3s ease-in-out;
             }
             &:hover {
               color: $secondColor;
@@ -3040,8 +3050,8 @@ content {
         box-shadow: none;
       }
       &::after {
-        content: '\f107';
-        font-family: 'Font Awesome 6 Pro';
+        content: "\f107";
+        font-family: "Font Awesome 6 Pro";
         background: none;
         transform-origin: 50%;
         transform: none;
@@ -3050,7 +3060,7 @@ content {
         background: $mainColor;
         color: $secondColor;
         &::after {
-          content: '\f106';
+          content: "\f106";
         }
       }
     }
@@ -3062,10 +3072,9 @@ content {
 .MainSlider {
   min-height: calc(100vh - 124px);
   margin-top: 124px;
-  padding: 80px 0; 
+  padding: 80px 0;
   .row {
     align-items: center;
-
   }
   .slide-content {
     height: 100%;
@@ -3136,10 +3145,8 @@ content {
         height: 100%;
         object-fit: cover;
         object-position: top;
-        
       }
     }
-    
   }
   .frame {
     width: 100%;

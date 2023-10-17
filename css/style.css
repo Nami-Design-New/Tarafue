@@ -16,14 +16,13 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  background-color: #193b33;
+  width: 8px;
+  height: 8px;
+  background-color: #dadada;
   border-radius: 0px !important;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 0px !important;
 }
 
@@ -780,9 +779,12 @@ content {
 }
 .ourPartners .features-head {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: center;
+  background-color: rgba(25, 59, 51, 0.062745098);
+  color: #193b33;
 }
 .ourPartners .package-type {
   width: 100%;
@@ -798,6 +800,7 @@ content {
   font-size: 22px !important;
   font-weight: 600;
   color: #193b33;
+  white-space: nowrap;
 }
 .ourPartners .package-type h3 {
   font-size: 16px;
@@ -813,6 +816,14 @@ content {
 }
 .ourPartners .col-3:last-child .package-type {
   border-left: 1px solid #eeeeee;
+}
+.ourPartners .table {
+  display: flex;
+  overflow-x: scroll;
+}
+.ourPartners .table .pack {
+  flex: 1;
+  min-width: 200px;
 }
 .ourPartners .table .features {
   border: 1px solid #eeeeee;
