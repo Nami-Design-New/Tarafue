@@ -94,7 +94,7 @@ $(document).ready(function () {
   //blogs
   var swiper = new Swiper('.blogs-container', {
     spaceBetween: 0,
-    centeredSlides: true,
+    // centeredSlides: true,
     speed: 2000,
     loop: true,
     autoplay: {

@@ -357,90 +357,6 @@ content {
   display: none;
 }
 
-.MainSlider {
-  position: relative;
-}
-.MainSlider .MainSlider-container {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 0px;
-}
-.MainSlider .MainSlider-container .swiper-slide {
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.MainSlider .MainSlider-container .swiper-slide::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3882352941);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transition: all 0.3s ease-in-out;
-}
-@media (max-width: 768px) {
-  .MainSlider .MainSlider-container .swiper-slide {
-    justify-content: center;
-    height: 750px;
-  }
-}
-.MainSlider .MainSlider-container .swiper-slide .info {
-  position: relative;
-  z-index: 2;
-  margin-top: 50px;
-  padding: 20px 30px;
-  max-width: 850px;
-  text-align: center;
-}
-@media (max-width: 768px) {
-  .MainSlider .MainSlider-container .swiper-slide .info {
-    margin-right: 0px;
-  }
-}
-.MainSlider .MainSlider-container .swiper-slide .info h2 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-shadow: 4px 5px 3px rgba(0, 0, 0, 0.8117647059);
-  margin-bottom: 10px;
-}
-@media (max-width: 768px) {
-  .MainSlider .MainSlider-container .swiper-slide .info h2 {
-    font-size: 24px;
-    line-height: 40px;
-  }
-}
-.MainSlider .MainSlider-container .swiper-slide .info h1 {
-  font-size: 46px;
-  overflow: hidden;
-  color: #e5ac70;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-shadow: 4px 5px 3px rgba(0, 0, 0, 0.8117647059);
-  line-height: 90px;
-}
-@media (max-width: 768px) {
-  .MainSlider .MainSlider-container .swiper-slide .info h1 {
-    font-size: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .MainSlider .MainSlider-container .swiper-slide .info h1 {
-    line-height: 48px;
-  }
-}
-.MainSlider .MainSlider-container .swiper-slide .info a {
-  margin-top: 30px;
-}
-
 .mainSlideItem.swiper-slide-active h2 {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -936,7 +852,7 @@ content {
   padding: 60px 0;
   background-image: url("../img/rounded-layer.png");
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -950,6 +866,10 @@ content {
   text-align: center;
   line-height: 1.45;
   font-weight: 600;
+}
+.system-view img {
+  width: min(100% - 32px, 600px);
+  border-radius: 24px;
 }
 
 .homeBlogs {
@@ -3117,12 +3037,12 @@ content {
 }
 
 .MainSlider {
-  height: calc(100vh - 124px);
+  min-height: calc(100vh - 124px);
   margin-top: 124px;
+  padding: 80px 0;
 }
-.MainSlider .container,
 .MainSlider .row {
-  height: 100%;
+  align-items: center;
 }
 .MainSlider .slide-content {
   height: 100%;
@@ -3175,43 +3095,34 @@ content {
      object-fit: contain;
 }
 .MainSlider .swiper {
-  width: 100%;
-  position: relative;
+  width: 84%;
+  aspect-ratio: 16/10.6;
+  position: absolute;
+  left: 50%;
+  top: 5%;
   display: flex;
+  padding: 0;
+  overflow: hidden;
+  transform: translateX(-50%);
+  border-radius: 4px;
 }
 .MainSlider .swiper .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 234px;
-  height: 507px;
   position: relative;
 }
-@media (max-width: 768px) {
-  .MainSlider .swiper .swiper-slide {
-    width: 175.5px;
-    height: 380px;
-  }
-}
 .MainSlider .swiper .swiper-slide img {
-  aspect-ratio: 3/2;
-  margin-top: 81px;
-  padding: 0 34px 14px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
-.MainSlider .swiper .frame {
+.MainSlider .frame {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-@media (max-width: 768px) {
-  .MainSlider .swiper .frame {
-    width: 202.5px;
-    height: 401px;
-  }
 }
 .MainSlider .swiper-wrapper {
   height: auto;
