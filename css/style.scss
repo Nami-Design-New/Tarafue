@@ -81,7 +81,7 @@ img {
   box-shadow: none;
 }
 body {
-  background-color: #fdfdfd;
+  background-color: #fafafa;
 }
 content {
   min-height: 90vh;
@@ -812,7 +812,6 @@ content {
     border-left: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     h2 {
       font-size: 22px !important;
       font-weight: 600;
@@ -832,12 +831,20 @@ content {
       color: #777;
     }
   }
-  .col-3:last-child .package-type {
+  .pack:last-child .package-type {
     border-left: 1px solid #eeeeee;
   }
   .table {
     display: flex;
     overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      &::-webkit-scrollbar {
+        display: block;
+      }
+    }
     .pack {
       flex: 1;
       min-width: 200px;
@@ -896,14 +903,14 @@ content {
     font-weight: 600;
   }
   img {
-    width: min(100% - 32px, 600px);
+    width: min(100% - 32px, 700px);
     border-radius: 24px;
   }
 }
 .homeBlogs {
   padding: 50px 0;
   background-image: linear-gradient(45deg, $mainColor, rgb(25 59 51 / 40%)),
-    url(../img/s1.jpg);
+    url(../img/blog.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3072,9 +3079,15 @@ content {
 .MainSlider {
   min-height: calc(100vh - 124px);
   margin-top: 124px;
-  padding: 80px 0;
+  padding: 80px 16px;
   .row {
     align-items: center;
+    @media (max-width: 768px) {
+      .sm-swip {
+        padding: 0;
+        margin-top: 24px;
+      }
+    }
   }
   .slide-content {
     height: 100%;
@@ -3084,11 +3097,9 @@ content {
     justify-content: center;
     position: relative;
     .thumb {
-      position: absolute;
-      height: 80px;
-      top: 28px;
-      left: 50%;
-      transform: translateX(-50%);
+      img {
+        height: 80px;
+      }
     }
     h2 {
       font-size: 42px;
