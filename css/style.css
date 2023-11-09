@@ -174,7 +174,7 @@ content {
 }
 
 .mainNav {
-  background-color: rgba(200, 200, 200, 0.44);
+  background-color: #fff;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
@@ -183,7 +183,7 @@ content {
   top: -1px;
 }
 .mainNav .navbar-brand {
-  padding: 0;
+  padding: 8px 0;
 }
 .mainNav .navbar-brand .logo {
   height: 32px;
@@ -196,7 +196,7 @@ content {
 }
 .mainNav .nav-item .nav-link {
   text-transform: capitalize;
-  color: #ffffff;
+  color: #004266;
   padding: 8px 12px;
   margin: 2px;
   border-radius: 4px;
@@ -209,7 +209,7 @@ content {
   }
 }
 .mainNav .nav-item .nav-link.active, .mainNav .nav-item .nav-link:hover, .mainNav .nav-item .nav-link:focus {
-  color: #004266;
+  color: #5fb670;
 }
 .mainNav .dropdown {
   font-size: medium;
@@ -2852,6 +2852,7 @@ content {
 @media (max-width: 576px) {
   .posts-section .tab-content .add-post-btn {
     left: 12px;
+    margin-left: 0;
   }
 }
 .posts-section .tab-content .add-post-btn img {

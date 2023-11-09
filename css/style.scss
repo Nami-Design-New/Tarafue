@@ -181,14 +181,15 @@ content {
 }
 // navBar
 .mainNav {
-  background-color: rgb(200 200 200 / 44%);
+  background-color: #fff;
   backdrop-filter: blur(10px);
   transition: $transition;
+  //height: 70px;
   &.sticky-top {
     top: -1px;
   }
   .navbar-brand {
-    padding: 0;
+    padding: 8px 0;
     .logo {
       height: 32px;
       object-fit: contain;
@@ -203,7 +204,7 @@ content {
   .nav-item {
     .nav-link {
       text-transform: capitalize;
-      color: $white-color;
+      color: $mainColor;
       padding: 8px 12px;
       margin: 2px;
       border-radius: 4px;
@@ -226,7 +227,7 @@ content {
       &.active,
       &:hover,
       &:focus {
-        color: $mainColor;
+        color: $secondColor;
         // &::after {
         //     width: 100%;
         // }
@@ -2862,6 +2863,7 @@ content {
       height: 55px;
       @media (max-width: 576px) {
         left: 12px;
+        margin-left: 0;
       }
       cursor: pointer;
       background: $mainColor;
