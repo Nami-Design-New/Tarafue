@@ -21,7 +21,7 @@ $(document).ready(function () {
     };
   });
   //MainSlider
-  var swiper = new Swiper('.MainSlider-container', {
+  var swiper = new Swiper('.phoneImgs', {
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,

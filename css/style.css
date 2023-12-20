@@ -778,14 +778,19 @@ content {
   color: #004266;
   border-radius: 8px;
 }
+.ourPartners .features-head2,
 .ourPartners .features-head {
   width: 100%;
   display: flex;
   align-items: center;
-  flex: 1;
   justify-content: center;
   background-color: rgba(25, 59, 51, 0.062745098);
   color: #004266;
+  height: 190px;
+}
+.ourPartners .features-head2 {
+  height: auto;
+  flex: 1;
 }
 .ourPartners .package-type {
   width: 100%;
@@ -793,6 +798,7 @@ content {
   margin-right: -1px;
   border: 1px solid #eeeeee;
   border-left: 0;
+  gap: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -837,6 +843,7 @@ content {
   border: 1px solid #eeeeee;
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
   margin-top: -1px;
 }
 .ourPartners .table .features li {
@@ -851,6 +858,7 @@ content {
   border-bottom: 1px solid #eeeeee;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 .ourPartners .table .available-features li {
   padding: 12px 24px;
@@ -864,6 +872,77 @@ content {
 }
 .ourPartners .table .available-features li .check-Mark {
   color: #24d424;
+}
+.ourPartners .table .available-features li button {
+  outline: none;
+  border: none;
+  color: #004266;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+.ourPartners .table .available-features li.additional {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.ourPartners .table .available-features li.additional input[type=checkbox] {
+  width: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+.ourPartners .table .available-features li.additional input[type=checkbox]::after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  content: "";
+  font-family: "FontAwesome";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 10px;
+  padding-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+.ourPartners .table .available-features li.additional input[type=checkbox]:checked::after {
+  content: "\f00c";
+  background: #004266;
+  color: #fff;
+  border-color: #004266;
+}
+.ourPartners .table .available-features li.additional .quantity {
+  display: flex;
+}
+.ourPartners .table .available-features li.additional .quantity button {
+  width: 18px;
+  border: 1px solid #eee;
+}
+.ourPartners .table .available-features li.additional .quantity input {
+  width: 32px;
+  border: none;
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.ourPartners .table .available-features li.additional .quantity input::-webkit-inner-spin-button {
+  display: none;
+}
+.ourPartners .feature-head {
+  text-align: center;
+  padding: 16px;
+  background: #eceeed;
+  color: #004266;
+  font-weight: 600;
 }
 
 .system-view {
@@ -3207,4 +3286,81 @@ content {
 
 .blogsPage .blog:hover .blog-content a {
   color: #5fb670;
+}
+
+.terms {
+  padding: 40px 12px;
+}
+.terms h3 {
+  color: #004266;
+  font-weight: 700;
+  font-size: 24px;
+}
+.terms p {
+  font-size: 14px;
+  color: #292929;
+  line-height: 24px;
+}
+.terms ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.terms ul li h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #004266;
+}
+
+.lawyers {
+  padding: 40px 0;
+}
+.lawyers .lawyr_card {
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1882352941);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.lawyers .lawyr_card .img {
+  width: 100%;
+}
+.lawyers .lawyr_card .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  aspect-ratio: 3/2;
+}
+.lawyers .lawyr_card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+.lawyers .lawyr_card .info h5 {
+  font-size: 18px;
+  color: #004266;
+  font-weight: 600;
+}
+.lawyers .lawyr_card .info h5 i {
+  font-size: 14px;
+  color: #5fb670;
+}
+.lawyers .lawyr_card .info p {
+  color: #292929;
+}
+.lawyers .lawyr_card .info a {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  background: #004266;
+  color: #fff;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

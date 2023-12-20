@@ -797,14 +797,19 @@ content {
       border-radius: 8px;
     }
   }
+  .features-head2,
   .features-head {
     width: 100%;
     display: flex;
     align-items: center;
-    flex: 1;
     justify-content: center;
     background-color: #193b3310;
     color: $mainColor;
+    height: 190px;
+  }
+  .features-head2 {
+    height: auto;
+    flex: 1;
   }
   .package-type {
     width: 100%;
@@ -812,6 +817,7 @@ content {
     margin-right: -1px;
     border: 1px solid #eeeeee;
     border-left: 0;
+    gap: 8px;
     display: flex;
     flex-direction: column;
     h2 {
@@ -855,6 +861,7 @@ content {
       border: 1px solid #eeeeee;
       list-style: none;
       padding: 0;
+      margin-bottom: 0;
       margin-top: -1px;
       li {
         padding: 12px;
@@ -869,6 +876,7 @@ content {
       border-bottom: 1px solid #eeeeee;
       list-style: none;
       padding: 0;
+      margin: 0;
       li {
         padding: 12px 24px;
         border-bottom: 1px solid #eeeeee;
@@ -881,8 +889,77 @@ content {
         .check-Mark {
           color: #24d424;
         }
+        button {
+          outline: none;
+          border: none;
+          color: $mainColor;
+          background: none;
+          width: 100%;
+          height: 100%;
+        }
+        &.additional {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          white-space: nowrap;
+          input[type="checkbox"] {
+            width: 14px;
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+            &::after {
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              top: 50%;
+              content: "";
+              font-family: "FontAwesome";
+              width: 16px;
+              height: 16px;
+              border: 1px solid #eee;
+              border-radius: 4px;
+              font-size: 10px;
+              padding-top: 1px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: .3s ease-in-out;
+            }
+            &:checked::after {
+              content: "\f00c";
+              background: $mainColor;
+              color: #fff;
+              border-color: $mainColor;
+            }
+          }
+          .quantity {
+            display: flex;
+            button {
+              width: 18px;
+              border: 1px solid #eee;
+            }
+            input {
+              width: 32px;
+              border: none;
+              text-align: center;
+              border-top: 1px solid #eee;
+              border-bottom: 1px solid #eee;
+              &::-webkit-inner-spin-button {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
+  }
+  .feature-head {
+    text-align: center;
+    padding: 16px;
+    background: #eceeed;
+    color: $mainColor;
+    font-weight: 600;
   }
 }
 .system-view {
@@ -3226,4 +3303,79 @@ content {
 }
 .blogsPage .blog:hover .blog-content a {
   color: $secondColor;
+}
+.terms {
+  padding: 40px 12px;
+  h3 {
+    color: $mainColor;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+    color: $black-color;
+    line-height: 24px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    li {
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: $mainColor;
+      }
+    }
+  }
+}
+.lawyers {
+  padding: 40px 0;
+  .lawyr_card {
+    overflow: hidden;
+    box-shadow: $shadow;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    .img {
+      width: 100%;
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        aspect-ratio: 3/2;
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px;
+      h5 {
+        font-size: 18px;
+        color: $mainColor;
+        font-weight: 600;
+        i{
+          font-size: 14px;
+          color: $secondColor;
+        }
+      }
+      p {
+        color: $black-color;
+      }
+      a {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        text-align: center;
+        background: $mainColor;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
 }
