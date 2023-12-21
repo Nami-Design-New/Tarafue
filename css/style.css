@@ -335,11 +335,11 @@ content {
   width: 20px;
   border-radius: 4px;
   opacity: 0.5;
-  background-color: #5fb670;
+  background-color: #004266;
   margin: 2px !important;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5fb670;
+  background-color: #004266;
   width: 40px;
   border-radius: 4px;
   opacity: 1;
@@ -3284,10 +3284,6 @@ content {
   font-size: 14px;
 }
 
-.blogsPage .blog:hover .blog-content a {
-  color: #5fb670;
-}
-
 .terms {
   padding: 40px 12px;
 }
@@ -3363,4 +3359,64 @@ content {
   background: #004266;
   color: #fff;
   font-size: 12px;
+}
+
+.blogs {
+  padding: 120px 0 40px;
+}
+.blogs .blog {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.blogs .blog img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.blogs .blog .data {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.blogs .blog .date {
+  color: #5fb670;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: auto;
+}
+.blogs .blog .date i {
+  color: #5fb670;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.blogs .blog .title2 {
+  color: #004266;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+.blogs .blog .description {
+  color: #777;
+}
+.blogs .blog:hover {
+  transform: translateY(-5px);
+}
+.blogs .blog:hover .title {
+  color: var(--mainColor);
+}
+.blogs .blog:hover .date i {
+  color: var(--whiteColor);
+}
+.blogs .swiperControl {
+  position: relative;
+  padding-top: 40px;
+}
+.blogs .swiperControl .swiper-pagination {
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

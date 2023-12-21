@@ -332,7 +332,7 @@
                   <label for="8">إضافة مستخدمين</label>
                   <div class="quantity">
                     <button class="decrease">-</button>
-                    <input type="number" value="1"/>
+                    <input type="number" value="1" />
                     <button class="increase">+</button>
                   </div>
                   <input type="checkbox" name="additional_features" id="3">
@@ -391,7 +391,7 @@
                   <label for="8">إضافة مستخدمين</label>
                   <div class="quantity">
                     <button class="decrease">-</button>
-                    <input type="number" value="1"/>
+                    <input type="number" value="1" />
                     <button class="increase">+</button>
                   </div>
                   <input type="checkbox" name="additional_features" id="3">
@@ -450,7 +450,7 @@
                   <label for="8">إضافة مستخدمين</label>
                   <div class="quantity">
                     <button class="decrease">-</button>
-                    <input type="number" value="1"/>
+                    <input type="number" value="1" />
                     <button class="increase">+</button>
                   </div>
                   <input type="checkbox" name="additional_features" id="3">
@@ -465,64 +465,94 @@
       </div>
     </section>
     <!-- Home Blogs -->
-    <section class="homeBlogs">
+    <section class="blogs">
       <div class="container">
         <h4 class="title "> <span> أحدث الأخبار </span> <a href="blogs.html"> شاهد المزيد </a> </h4>
-        <div class="swiper blogs-container ">
+        <!-- slider -->
+        <div class="swiper blogSlider">
           <div class="swiper-wrapper">
+            <!-- slide -->
             <div class="swiper-slide">
-              <div class="blog row ">
-                <div class="blog-image col-md-5  p-0">
-                  <a href="blog-details.html"><img src="img/s1.jpg"></a>
+              <a href="blog-details.html" class="blog" data-aos="fade-up">
+                <div class="lazyDiv up">
+                  <img class="lazy" src="img/s1.jpg" alt="">
                 </div>
-                <span class=" date"> <i class="fas fa-calendar-alt me-2"></i> 20 / 10 / 2021 </span>
-                <div class="blog-content col-md-7 ">
-                  <h5>
-                    <a href="blog-details.html"> ما هي حقوق المستأجرين والمالكين في عقود الإيجار؟ </a>
-                  </h5>
-                  <p>
+                <div class="data">
+                  <h5 class="title2"> ما هي حقوق المستأجرين والمالكين في عقود الإيجار؟ </h5>
+                  <p class="description">
                     إن عقود الإيجار هي جزء مهم من حياة الكثيرين، سواء كنت مالكًا للعقار أو مستأجرًا. في هذا المقال،
                     سنتناول حقوق المستأجرين والمالكين والواجبات المترتبة عليهما في عقود الإيجار.
                   </p>
+                  <div class="date">
+                    <i class="fa-duotone fa-calendar-days"></i>
+                    18 , February , 2023
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
+            <!-- slide -->
             <div class="swiper-slide">
-              <div class="blog row ">
-                <div class="blog-image col-md-5  p-0">
-                  <a href="blog-details.html"><img src="img/s2.jpg"></a>
+              <a href="blog-details.html" class="blog" data-aos="fade-up">
+                <div class="lazyDiv up">
+                  <img class="lazy" src="img/s2.jpg" alt="">
                 </div>
-                <span class=" date"> <i class="fas fa-calendar-alt me-2"></i> 20 / 10 / 2021 </span>
-                <div class="blog-content col-md-7 ">
-                  <h5>
-                    <a href="blog-details.html">كيفية التعامل مع القضايا العائلية: الطلاق وحضانة الأطفال </a>
+                <div class="data">
+                  <h5 class="title2">
+                    كيفية التعامل مع القضايا العائلية: الطلاق وحضانة الأطفال
                   </h5>
-                  <p>
+                  <p class="description">
                     تعتبر القضايا العائلية من أكثر القضايا التي تحمل تحديات قانونية وعاطفية. في هذا المقال، سنقدم نصائح
                     حول كيفية التعامل مع القضايا المتعلقة بالطلاق وحضانة الأطفال.
                   </p>
+                  <div class="date">
+                    <i class="fa-duotone fa-calendar-days"></i>
+                    18 , February , 2023
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
+            <!-- slide -->
             <div class="swiper-slide">
-              <div class="blog row ">
-                <div class="blog-image col-md-5  p-0">
-                  <a href="blog-details.html"><img src="img/s4.jpg"></a>
+              <a href="blog-details.html" class="blog" data-aos="fade-up">
+                <div class="lazyDiv up">
+                  <img class="lazy" src="img/s4.jpg" alt="">
                 </div>
-                <span class=" date"> <i class="fas fa-calendar-alt me-2"></i> 20 / 10 / 2021 </span>
-                <div class="blog-content col-md-7 ">
-                  <h5>
-                    <a href="blog-details.html"> ما هي حقوق المستهلكين وكيفية الدفاع عنها؟ </a>
-                  </h5>
-                  <p>
+                <div class="data">
+                  <h5 class="title2"> ما هي حقوق المستهلكين وكيفية الدفاع عنها؟ </h5>
+                  <p class="description">
                     حقوق المستهلكين هي محور أساسي في القانون، ويجب حمايتها. سنشرح في هذا المقال حقوق المستهلكين وكيف
                     يمكن للأفراد الدفاع عنها في حالة وجود مشاكل مع منتجات أو خدمات.
                   </p>
+                  <div class="date">
+                    <i class="fa-duotone fa-calendar-days"></i>
+                    18 , February , 2023
+                  </div>
                 </div>
-              </div>
+              </a>
+            </div>
+            <!-- slide -->
+            <div class="swiper-slide">
+              <a href="blog-details.html" class="blog" data-aos="fade-up">
+                <div class="lazyDiv up">
+                  <img class="lazy" src="img/s1.jpg" alt="">
+                </div>
+                <div class="data">
+                  <h5 class="title2"> ما هي حقوق المستأجرين والمالكين في عقود الإيجار؟ </h5>
+                  <p class="description">
+                    إن عقود الإيجار هي جزء مهم من حياة الكثيرين، سواء كنت مالكًا للعقار أو مستأجرًا. في هذا المقال،
+                    سنتناول حقوق المستأجرين والمالكين والواجبات المترتبة عليهما في عقود الإيجار.
+                  </p>
+                  <div class="date">
+                    <i class="fa-duotone fa-calendar-days"></i>
+                    18 , February , 2023
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiperControl">
+            <div class="blogPagination swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </section>
