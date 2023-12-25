@@ -202,3 +202,23 @@ $(document).ready(function () {
   //dropify
   $(".dropify").dropify();
 });
+
+$(document).ready(function() {
+  // Increment button click
+  $('.increase').on('click', function() {
+    var input = $(this).siblings('input');
+    var currentValue = parseInt(input.val());
+    input.val(currentValue + 1);
+  });
+
+  // Decrement button click
+  $('.decrease').on('click', function() {
+    var input = $(this).siblings('input');
+    var currentValue = parseInt(input.val());
+    
+    // Make sure the value doesn't go below 1
+    if (currentValue > 1) {
+      input.val(currentValue - 1);
+    }
+  });
+});

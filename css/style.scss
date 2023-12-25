@@ -405,7 +405,6 @@ content {
   display: none;
 }
 // slider
-
 .mainSlideItem.swiper-slide-active {
   h2 {
     animation-duration: 1s;
@@ -805,7 +804,7 @@ content {
     justify-content: center;
     background-color: #193b3310;
     color: $mainColor;
-    height: 190px;
+    height: 252.38px;
   }
   .features-head2 {
     height: auto;
@@ -820,6 +819,7 @@ content {
     gap: 8px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     h2 {
       font-size: 22px !important;
       font-weight: 600;
@@ -828,15 +828,35 @@ content {
     }
     h3 {
       font-size: 16px;
-      color: $mainColor;
+      color: $black-color;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 4px;
       span {
+        color: #777;
+        text-decoration: line-through;
+      }
+      .price {
         color: $secondColor;
         font-size: 24px;
       }
     }
-    p {
+    .year {
       font-size: 14px;
       color: #777;
+      border: 1px solid #777;
+      padding: 4px 16px;
+      border-radius: 10px;
+    }
+
+    .ask {
+      background-color: $secondColor;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
     }
   }
   .pack:last-child .package-type {
@@ -856,6 +876,8 @@ content {
     .pack {
       flex: 1;
       min-width: 200px;
+      display: flex;
+      flex-direction: column;
     }
     .features {
       border: 1px solid #eeeeee;
@@ -877,11 +899,15 @@ content {
       list-style: none;
       padding: 0;
       margin: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
       li {
         padding: 12px 24px;
         border-bottom: 1px solid #eeeeee;
         &:last-child {
           border-bottom: 0;
+          margin-top: auto;
         }
         .x-Mark {
           color: red;
@@ -889,7 +915,8 @@ content {
         .check-Mark {
           color: #24d424;
         }
-        button {
+        .decrease,
+        .increase {
           outline: none;
           border: none;
           color: $mainColor;
@@ -917,14 +944,14 @@ content {
               font-family: "FontAwesome";
               width: 16px;
               height: 16px;
-              border: 1px solid #eee;
+              border: 1px solid #afafaf;
               border-radius: 4px;
               font-size: 10px;
               padding-top: 1px;
               display: flex;
               align-items: center;
               justify-content: center;
-              transition: .3s ease-in-out;
+              transition: 0.3s ease-in-out;
             }
             &:checked::after {
               content: "\f00c";
@@ -962,6 +989,19 @@ content {
     font-weight: 600;
   }
 }
+.subscribe {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: $mainColor;
+  color: $white-color;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
 .system-view {
   width: 100%;
   padding: 60px 0;
@@ -3301,7 +3341,6 @@ content {
     }
   }
 }
-
 .terms {
   padding: 40px 12px;
   h3 {
@@ -3436,4 +3475,7 @@ content {
       justify-content: center;
     }
   }
+}
+.table > :not(caption) > * > * {
+  background-color: unset;
 }

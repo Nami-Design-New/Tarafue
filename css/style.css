@@ -786,7 +786,7 @@ content {
   justify-content: center;
   background-color: rgba(25, 59, 51, 0.062745098);
   color: #004266;
-  height: 190px;
+  height: 252.38px;
 }
 .ourPartners .features-head2 {
   height: auto;
@@ -801,6 +801,7 @@ content {
   gap: 8px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .ourPartners .package-type h2 {
   font-size: 22px !important;
@@ -810,15 +811,34 @@ content {
 }
 .ourPartners .package-type h3 {
   font-size: 16px;
-  color: #004266;
+  color: #292929;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
 }
 .ourPartners .package-type h3 span {
+  color: #777;
+  text-decoration: line-through;
+}
+.ourPartners .package-type h3 .price {
   color: #5fb670;
   font-size: 24px;
 }
-.ourPartners .package-type p {
+.ourPartners .package-type .year {
   font-size: 14px;
   color: #777;
+  border: 1px solid #777;
+  padding: 4px 16px;
+  border-radius: 10px;
+}
+.ourPartners .package-type .ask {
+  background-color: #5fb670;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
 }
 .ourPartners .pack:last-child .package-type {
   border-left: 1px solid #eeeeee;
@@ -838,6 +858,8 @@ content {
 .ourPartners .table .pack {
   flex: 1;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 .ourPartners .table .features {
   border: 1px solid #eeeeee;
@@ -859,6 +881,9 @@ content {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .ourPartners .table .available-features li {
   padding: 12px 24px;
@@ -866,6 +891,7 @@ content {
 }
 .ourPartners .table .available-features li:last-child {
   border-bottom: 0;
+  margin-top: auto;
 }
 .ourPartners .table .available-features li .x-Mark {
   color: red;
@@ -873,7 +899,8 @@ content {
 .ourPartners .table .available-features li .check-Mark {
   color: #24d424;
 }
-.ourPartners .table .available-features li button {
+.ourPartners .table .available-features li .decrease,
+.ourPartners .table .available-features li .increase {
   outline: none;
   border: none;
   color: #004266;
@@ -905,7 +932,7 @@ content {
   font-family: "FontAwesome";
   width: 16px;
   height: 16px;
-  border: 1px solid #eee;
+  border: 1px solid #afafaf;
   border-radius: 4px;
   font-size: 10px;
   padding-top: 1px;
@@ -943,6 +970,19 @@ content {
   background: #eceeed;
   color: #004266;
   font-weight: 600;
+}
+
+.subscribe {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #004266;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
 .system-view {
@@ -3419,4 +3459,8 @@ content {
 }
 .blogs .swiperControl .swiper-pagination {
   justify-content: center;
+}
+
+.table > :not(caption) > * > * {
+  background-color: unset;
 }/*# sourceMappingURL=style.css.map */
