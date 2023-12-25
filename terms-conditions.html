@@ -6,9 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ترافع </title>
+    <title> قانوني </title>
     <!-- icon -->
-    <link rel="icon" type="image/x-icon" href="img/fav.svg">
+    <!-- Light Theme Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/fav.png" id="browser-light-theme-favicon" />
+    <!-- Dark Theme Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favWhite.png" id="browser-dark-theme-favicon" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <!-- Font Awesome -->
@@ -55,7 +58,7 @@
         <!-- ================ NavBar ================= -->
         <nav class="navbar mainNav  navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html"> <img class="logo" src="img/logo.png"> </a>
+                <a class="navbar-brand" href="index.html"> <img class="logo" src="img/logo.svg"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -255,7 +258,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 p-2 py-4">
-                    <img class="logo" src="img/logo.png" alt="">
+                    <img class="logo" src="img/logo.svg" alt="">
                     <p class="info">
                         ترافع هو مكتب محاماة قانوني، نؤمن بالعدالة والقانون كوسيلة للحماية والدعم لعملائنا. نحن نفتخر
                         بتقديم
@@ -338,8 +341,11 @@
     <script src="js/odometer.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/dropify.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/Custom.js"></script>
     <script>
+        // goBack
         function goBack() {
             window.history.back();
         };

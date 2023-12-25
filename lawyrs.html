@@ -6,19 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ترافع </title>
-    <!-- icon -->
-    <link rel="icon" type="image/x-icon" href="img/fav.svg">
+    <title> قانوني </title>
+    <!-- Light Theme Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/fav.png" id="browser-light-theme-favicon" />
+    <!-- Dark Theme Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favWhite.png" id="browser-dark-theme-favicon" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- odometer -->
+    <link rel="stylesheet" href="css/odometer.min.css">
+    <!-- odometer -->
+    <link rel="stylesheet" href="css/dropify.min.css">
+    <!-- odometer -->
+    <link rel="stylesheet" href="css/select2.min.css">
     <!-- Custom style  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 
 <body>
     <!-- ================ Header ================= -->
@@ -52,7 +62,7 @@
         <!-- ================ NavBar ================= -->
         <nav class="navbar mainNav  navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html"> <img class="logo" src="img/logo.png"> </a>
+                <a class="navbar-brand" href="index.html"> <img class="logo" src="img/logo.svg"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -166,7 +176,7 @@
                             </div>
                             <div class="info">
                                 <h5> بدر الروقي <i class="fa-solid fa-badge-check"></i></h5>
-                                <p>القضايا الاسريه</p> 
+                                <p>القضايا الاسريه</p>
                                 <a href="request.html">
                                     طلب المحامى
                                 </a>
@@ -180,7 +190,7 @@
                             </div>
                             <div class="info">
                                 <h5>طلق بن رفاع الزناتي</h5>
-                                <p>قضايا عامة</p> 
+                                <p>قضايا عامة</p>
                                 <a href="request.html">
                                     طلب المحامى
                                 </a>
@@ -194,7 +204,7 @@
                             </div>
                             <div class="info">
                                 <h5>ياسر الرويعى</h5>
-                                <p>القضايا الاسريه</p> 
+                                <p>القضايا الاسريه</p>
                                 <a href="request.html">
                                     طلب المحامى
                                 </a>
@@ -208,7 +218,7 @@
                             </div>
                             <div class="info">
                                 <h5>بدر الروقي</h5>
-                                <p>القضايا الجنائيه</p> 
+                                <p>القضايا الجنائيه</p>
                                 <a href="request.html">
                                     طلب المحامى
                                 </a>
@@ -227,7 +237,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 p-2 py-4">
-                    <img class="logo" src="img/logo.png" alt="">
+                    <img class="logo" src="img/logo.svg" alt="">
                     <p class="info">
                         ترافع هو مكتب محاماة قانوني، نؤمن بالعدالة والقانون كوسيلة للحماية والدعم لعملائنا. نحن نفتخر
                         بتقديم
@@ -310,11 +320,14 @@
     <script src="js/odometer.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/dropify.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/Custom.js"></script>
     <script>
-        function goBack() {
-            window.history.back();
-        };
+      // goBack
+      function goBack() {
+        window.history.back();
+      };
     </script>
 </body>
 
